@@ -9,7 +9,7 @@ export const Header: FC = () => {
   return (
     <header
       className={clsx(
-        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0 h-[65px]",
+        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0 h-[65px] z-10",
         "dark:border-b-white"
       )}
     >
