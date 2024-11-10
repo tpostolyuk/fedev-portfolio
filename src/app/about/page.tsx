@@ -21,7 +21,9 @@ export default function About() {
           "dark:bg-slate-900 dark:border-b-white"
         )}
       >
-        <h1
+        <motion.h1
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           className={clsx(
             bebasNeue.className,
             "text-center text-6xl",
@@ -29,7 +31,7 @@ export default function About() {
           )}
         >
           ABOUT ME
-        </h1>
+        </motion.h1>
       </section>
       <section
         className={clsx(
@@ -62,85 +64,41 @@ export default function About() {
           />
         </div>
         <div className="flex flex-col gap-4 mt-6 max-w-2xl">
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-2xl font-semibold"
-          >
-            What I offer:
-          </motion.h2>
+          <h2 className="text-2xl font-semibold">What I offer:</h2>
           <ul className="flex flex-col gap-2 list-disc">
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0 } }}
-              className="ml-8"
-            >
+            <li className="ml-8">
               Expertise in transforming Figma/PSD designs into{" "}
               <strong>pixel-perfect</strong>, functional websites.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.1 } }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               Proficiency in complex integrations, <strong>API handling</strong>
               , and data visualizations for real-time insights.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.2 } }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               Strong focus on <strong>code quality</strong>, SEO-friendly
               development, and performance optimization.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.3 } }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               A commitment to <strong>client satisfaction</strong>, from
               thorough industry research to seamless end-user experiences.
-            </motion.li>
+            </li>
           </ul>
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-2xl font-semibold"
-          >
-            Tech Stack:
-          </motion.h2>
+          <h2 className="text-2xl font-semibold">Tech Stack:</h2>
           <ul className="flex flex-col gap-2 list-disc">
-            <motion.li
-              animate={{ opacity: 1, transition: { delay: 0.1 } }}
-              initial={{ opacity: 0 }}
-              className="ml-8"
-            >
+            <li className="ml-8">
               <b>Frontend:</b> JavaScript, TypeScript, React, Redux, React
               Query, Next.js, CSS (Sass), HTML, Bootstrap, Tailwind CSS,
               Material-UI, styled-components.
-            </motion.li>
-            <motion.li
-              animate={{ opacity: 1, transition: { delay: 0.2 } }}
-              initial={{ opacity: 0 }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               <b>Testing:</b> Postman.
-            </motion.li>
-            <motion.li
-              animate={{ opacity: 1, transition: { delay: 0.3 } }}
-              initial={{ opacity: 0 }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               <b>VersionControl:</b> Git, GitHub, Bitbucket.
-            </motion.li>
-            <motion.li
-              animate={{ opacity: 1, transition: { delay: 0.4 } }}
-              initial={{ opacity: 0 }}
-              className="ml-8"
-            >
+            </li>
+            <li className="ml-8">
               <b>DesignTools:</b> Figma.
-            </motion.li>
+            </li>
           </ul>
           Whether you’re looking to create a custom dashboard, deploy a
           responsive website, or enhance an existing platform, I can help you
