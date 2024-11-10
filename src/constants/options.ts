@@ -1,1 +1,1 @@
-export const NAV_ITEMS = ["ABOUT", "SKILLS", "CONTACTS"];
+export const NAV_ITEMS = ["ABOUT", "SKILLS", "CONTACT"];

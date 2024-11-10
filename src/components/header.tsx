@@ -9,14 +9,14 @@ export const Header: FC = () => {
   return (
     <header
       className={clsx(
-        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0",
+        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0 h-[65px]",
         "dark:border-b-white"
       )}
     >
       <Link href="/">
         <div
           className={clsx(
-            "p-8 flex items-center justify-center max-w-fit h-8 font-bold text-xl text-slate-900",
+            "p-8 flex items-center justify-center max-w-fit h-8 font-bold text-xl text-slate-900 border-r-[1px] border-r-slate-900",
             "dark:bg-slate-900 dark:text-white",
             "hover:underline cursor-pointer"
           )}

@@ -10,11 +10,11 @@ export const Footer: FC = () => {
   return (
     <footer
       className={clsx(
-        "flex items-center gap-4 justify-between border-t-slate-900 py-4 px-8 bg-zinc-100",
+        "flex items-center gap-4 justify-between border-t-slate-900 border-t-[1px] py-4 px-8 bg-zinc-100 h-[65px]",
         "dark:border-t-white dark:bg-slate-900 dark:text-white"
       )}
     >
-      <ul className="flex items-center text-xs font-semibold gap-8">
+      <ul className="flex mx-auto items-center text-xs font-semibold gap-8">
         {NAV_ITEMS.map((item) => (
           <Link
             className="hover:underline"

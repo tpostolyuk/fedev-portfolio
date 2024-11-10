@@ -34,7 +34,7 @@ export default function About() {
       >
         <div className="flex items-center gap-8 max-w-2xl">
           <Image
-            className="float-right"
+            className="rounded-sm"
             src="/profile.png"
             alt="profile"
             height={200}
