@@ -13,6 +13,9 @@ const hostGrotesk = Host_Grotesk({
 export const metadata: Metadata = {
   title: "Taras Postoliuk",
   description: "FE Dev Taras Postoliuk Portfolio",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
-import clsx from "clsx";
 import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
+import clsx from "clsx";
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],

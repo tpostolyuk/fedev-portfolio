@@ -24,6 +24,9 @@ export const Footer: FC = () => {
             <li>{item}</li>
           </Link>
         ))}
+        <li className="hover:underline">
+          <a href="mailto:tpstlk.work@gmail.com">EMAIL</a>
+        </li>
       </ul>
       <ul className="flex items-center gap-4">
         <li className="hover:rotate-6">
