@@ -10,12 +10,28 @@ const bebasNeue = Bebas_Neue({
 export default function About() {
   return (
     <main className="bg-zinc-100 flex flex-col">
-      <section className="border-b-[1px] border-b-slate-900 py-14">
-        <h1 className={clsx(bebasNeue.className, "text-center text-6xl")}>
+      <section
+        className={clsx(
+          "border-b-[1px] border-b-slate-900 py-8",
+          "dark:bg-slate-900 dark:border-b-white"
+        )}
+      >
+        <h1
+          className={clsx(
+            bebasNeue.className,
+            "text-center text-6xl",
+            "dark:text-white"
+          )}
+        >
           ABOUT ME
         </h1>
       </section>
-      <section className="border-b-slate-900 border-b-[1px] flex flex-col justify-center items-center py-14">
+      <section
+        className={clsx(
+          "border-b-slate-900 border-b-[1px] flex flex-col justify-center items-center py-14",
+          "dark:bg-slate-900 dark:text-white dark:border-b-white"
+        )}
+      >
         <div className="flex items-center gap-8 max-w-2xl">
           <Image
             className="float-right"

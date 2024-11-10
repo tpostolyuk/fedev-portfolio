@@ -7,7 +7,12 @@ import { ThemeToggle } from "./theme-toggle";
 
 export const Header: FC = () => {
   return (
-    <header className="flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900">
+    <header
+      className={clsx(
+        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0",
+        "dark:border-b-white"
+      )}
+    >
       <Link href="/">
         <div
           className={clsx(
