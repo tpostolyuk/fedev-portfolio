@@ -29,7 +29,10 @@ export default function RootLayout({
       suppressHydrationWarning
       lang="en"
     >
-      <body className={hostGrotesk.className}>
+      <body
+        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+        className={hostGrotesk.className}
+      >
         <ThemeProvider defaultTheme="system" attribute="class">
           <Header />
           {children}

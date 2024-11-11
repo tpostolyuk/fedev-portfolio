@@ -26,7 +26,7 @@ const bebasNeue = Bebas_Neue({
 
 export default function Contact() {
   return (
-    <main className="bg-zinc-100 flex flex-col h-[calc(100vh-130px)]">
+    <main className="bg-zinc-100 flex flex-col overflow-y-auto h-full">
       <section
         className={clsx(
           "border-b-[1px] border-b-slate-900 py-8",
