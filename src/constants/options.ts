@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
 import { FaSquareUpwork } from "react-icons/fa6";
 import { BiLogoDevTo } from "react-icons/bi";
 
