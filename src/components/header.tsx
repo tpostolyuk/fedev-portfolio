@@ -16,7 +16,7 @@ export const Header: FC = () => {
       <Link href="/">
         <div
           className={clsx(
-            "p-8 flex items-center justify-center max-w-fit h-8 font-bold text-xl text-slate-900 border-r-[1px] border-r-slate-900",
+            "p-8 flex items-center justify-center max-w-fit h-8 font-bold md:text-xl text-slate-900 border-r-[1px] border-r-slate-900",
             "dark:bg-slate-900 dark:text-white dark:border-r-white",
             "hover:underline cursor-pointer"
           )}
@@ -25,7 +25,12 @@ export const Header: FC = () => {
         </div>
       </Link>
       <nav>
-        <ul className={clsx("flex items-center gap-8", "dark:text-white")}>
+        <ul
+          className={clsx(
+            "hidden items-center gap-8 md:flex",
+            "dark:text-white"
+          )}
+        >
           {NAV_ITEMS.map((item) => (
             <Link
               className="hover:underline"
@@ -37,8 +42,10 @@ export const Header: FC = () => {
           ))}
         </ul>
       </nav>
-      <div className="ml-auto mr-8">
-        <ThemeToggle />
+      <div className="flex items-center gap-2 ml-auto mr-8">
+        <div className="md:flex hidden">
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
