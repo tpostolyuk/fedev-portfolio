@@ -35,8 +35,8 @@ export default function About() {
       </section>
       <section
         className={clsx(
-          "border-b-slate-900 border-b-[1px] flex flex-col justify-center items-center py-14",
-          "dark:bg-slate-900 dark:text-white dark:border-b-white"
+          "flex flex-col justify-center items-center py-14",
+          "dark:bg-slate-900 dark:text-white"
         )}
       >
         <div className="flex items-center gap-8 max-w-2xl">
