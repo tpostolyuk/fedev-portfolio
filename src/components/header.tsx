@@ -17,7 +17,7 @@ export const Header: FC = () => {
         <div
           className={clsx(
             "p-8 flex items-center justify-center max-w-fit h-8 font-bold text-xl text-slate-900 border-r-[1px] border-r-slate-900",
-            "dark:bg-slate-900 dark:text-white",
+            "dark:bg-slate-900 dark:text-white dark:border-r-white",
             "hover:underline cursor-pointer"
           )}
         >

@@ -24,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html
+      className="bg-zinc-100 dark:bg-slate-900"
+      suppressHydrationWarning
+      lang="en"
+    >
       <body className={hostGrotesk.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
           <Header />
