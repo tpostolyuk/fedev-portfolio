@@ -45,7 +45,7 @@ export default function Home() {
           <Link
             className={clsx(
               bebasNeue.className,
-              "mt-12 animate-bounce border-2 border-b-slate-600 p-4 text-3xl font-normal text-slate-600",
+              "mt-12 animate-bounce border-2 border-slate-800 p-4 text-3xl font-normal text-slate-800",
               "dark:border-white dark:text-white",
             )}
             href="/contact"
