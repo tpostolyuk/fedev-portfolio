@@ -27,8 +27,9 @@ export const Title: FC<Props> = ({ title }) => {
         animate={{ scale: 1, opacity: 1 }}
         className={clsx(
           bebasNeue.className,
-          "text-center text-6xl",
+          "text-center text-4xl",
           "dark:text-white",
+          "md:text-6xl",
         )}
       >
         {title}
