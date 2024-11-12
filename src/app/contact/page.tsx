@@ -11,7 +11,7 @@ export default function Contact() {
       <Title title="CONTACT" />
       <section
         className={clsx(
-          "flex h-full flex-grow flex-col items-center justify-center py-8",
+          "flex h-full flex-grow flex-col items-center justify-center px-4 py-8",
           "dark:border-b-white dark:bg-slate-900 dark:text-white",
         )}
       >
@@ -22,7 +22,9 @@ export default function Contact() {
               "dark:border-b-white",
             )}
           >
-            <h2 className="text-left text-4xl font-medium">
+            <h2
+              className={clsx("text-left text-2xl font-medium", "md:text-4xl")}
+            >
               Get in touch with me via links on social media or send me an{" "}
               <a
                 href="mailto:tpstlk.work@gmail.com"
@@ -34,7 +36,12 @@ export default function Contact() {
               .
             </h2>
           </div>
-          <ul className="grid grid-cols-3 items-start gap-8">
+          <ul
+            className={clsx(
+              "grid grid-cols-2 items-start gap-4",
+              "md:grid-cols-3 md:gap-8",
+            )}
+          >
             {SOCIAL_LINKS.map(({ label, url, Icon }) => (
               <li key={label} className="group hover:underline">
                 <a
