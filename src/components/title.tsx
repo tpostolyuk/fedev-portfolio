@@ -1,3 +1,5 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
 import { motion } from "framer-motion";
 import { FC } from "react";
@@ -16,7 +18,7 @@ export const Title: FC<Props> = ({ title }) => {
   return (
     <section
       className={clsx(
-        "border-b-[1px] border-b-slate-900 py-8",
+        "border-b-[1px] border-b-slate-900 py-2",
         "dark:border-b-white dark:bg-slate-900",
       )}
     >

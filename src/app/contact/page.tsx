@@ -11,7 +11,7 @@ export default function Contact() {
       <Title title="CONTACT" />
       <section
         className={clsx(
-          "flex h-full flex-grow flex-col items-center justify-center py-14",
+          "flex h-full flex-grow flex-col items-center justify-center py-8",
           "dark:border-b-white dark:bg-slate-900 dark:text-white",
         )}
       >

@@ -13,7 +13,7 @@ export default function About() {
       <Title title="ABOUT ME" />
       <section
         className={clsx(
-          "flex flex-col items-center justify-center py-14",
+          "flex flex-col items-center justify-center py-8",
           "dark:bg-slate-900 dark:text-white",
         )}
       >

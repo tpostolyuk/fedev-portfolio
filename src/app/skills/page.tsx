@@ -1,7 +1,5 @@
-"use client";
-
+import { MdAnimation, MdDateRange } from "react-icons/md";
 import { RiNextjsFill } from "react-icons/ri";
-import { MdDateRange } from "react-icons/md";
 import { BsBricks } from "react-icons/bs";
 import { TbApi } from "react-icons/tb";
 import clsx from "clsx";
@@ -28,7 +26,7 @@ export default function Contact() {
       <Title title="SKILLS" />
       <section
         className={clsx(
-          "flex h-full flex-col items-center justify-start py-14",
+          "flex h-full flex-col items-center justify-start py-8",
           "dark:border-b-white dark:bg-slate-900 dark:text-white",
         )}
       >
@@ -94,16 +92,20 @@ export default function Contact() {
               <li className="flex items-center gap-2 border-b-[1px] border-b-slate-900">
                 <FaChartSimple size={18} />
                 <span>
-                  Chart Libraries (chart.js, d3, echarts, recharts, highcharts)
+                  Charts (chart.js, d3, echarts, recharts, highcharts)
                 </span>
               </li>
               <li className="flex items-center gap-2 border-b-[1px] border-b-slate-900">
                 <MdDateRange size={18} />
-                <span>Date Libraries (momentjs, datefns, dayjs, luxon)</span>
+                <span>Dates (momentjs, datefns, dayjs, luxon)</span>
               </li>
               <li className="flex items-center gap-2 border-b-[1px] border-b-slate-900">
                 <BsBricks size={18} />
-                <span>UI Libraries (mui, antd, radix, shadcdn, chakra)</span>
+                <span>UI Components (mui, antd, radix, shadcdn, chakra)</span>
+              </li>
+              <li className="flex items-center gap-2 border-b-[1px] border-b-slate-900">
+                <MdAnimation size={18} />
+                <span>Animations: (framer-motion, react-transition-group)</span>
               </li>
             </ul>
           </section>
