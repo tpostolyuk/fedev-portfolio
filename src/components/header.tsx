@@ -21,12 +21,13 @@ export const Header: FC = () => {
       <Link href="/">
         <div
           className={clsx(
-            "flex h-8 max-w-fit items-center justify-center border-r-[1px] border-r-slate-900 p-8 font-bold text-slate-900 md:text-xl",
+            "flex h-8 max-w-fit items-center justify-center border-r-[1px] border-r-slate-900 p-8 font-semibold text-slate-900 md:text-xl",
             "dark:border-r-white dark:bg-slate-900 dark:text-white",
             "cursor-pointer hover:underline",
+            currentPath === "/" && "underline",
           )}
         >
-          FE DEV
+          FEDEV
         </div>
       </Link>
       <nav>
