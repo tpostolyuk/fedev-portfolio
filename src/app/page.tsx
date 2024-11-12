@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div className="w-full min-h-screen bg-zinc-100"></div>;
+  return <div className="min-h-screen w-full bg-zinc-100"></div>;
 }

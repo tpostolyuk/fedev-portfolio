@@ -1,38 +1,16 @@
 "use client";
 
-import { Bebas_Neue } from "next/font/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import clsx from "clsx";
 
 import { AnimatedText } from "@/components/animated-text";
-
-const bebasNeue = Bebas_Neue({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Title } from "@/components/title";
 
 export default function About() {
   return (
     <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
-      <section
-        className={clsx(
-          "border-b-[1px] border-b-slate-900 py-8",
-          "dark:border-b-white dark:bg-slate-900",
-        )}
-      >
-        <motion.h1
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          className={clsx(
-            bebasNeue.className,
-            "text-center text-6xl",
-            "dark:text-white",
-          )}
-        >
-          ABOUT ME
-        </motion.h1>
-      </section>
+      <Title title="ABOUT ME" />
       <section
         className={clsx(
           "flex flex-col items-center justify-center py-14",

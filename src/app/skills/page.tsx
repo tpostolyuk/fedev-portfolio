@@ -1,4 +1,9 @@
-import { Bebas_Neue } from "next/font/google";
+"use client";
+
+import { RiNextjsFill } from "react-icons/ri";
+import { MdDateRange } from "react-icons/md";
+import { BsBricks } from "react-icons/bs";
+import { TbApi } from "react-icons/tb";
 import clsx from "clsx";
 import {
   FaChartSimple,
@@ -14,35 +19,13 @@ import {
   SiTypescript,
   SiRedux,
 } from "react-icons/si";
-import { MdDateRange } from "react-icons/md";
-import { BsBricks } from "react-icons/bs";
-import { TbApi } from "react-icons/tb";
-import { RiNextjsFill } from "react-icons/ri";
 
-const bebasNeue = Bebas_Neue({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { Title } from "@/components/title";
 
 export default function Contact() {
   return (
     <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
-      <section
-        className={clsx(
-          "border-b-[1px] border-b-slate-900 py-8",
-          "dark:border-b-white dark:bg-slate-900",
-        )}
-      >
-        <h1
-          className={clsx(
-            bebasNeue.className,
-            "text-center text-6xl",
-            "dark:text-white",
-          )}
-        >
-          SKILLS
-        </h1>
-      </section>
+      <Title title="SKILLS" />
       <section
         className={clsx(
           "flex h-full flex-col items-center justify-start py-14",
