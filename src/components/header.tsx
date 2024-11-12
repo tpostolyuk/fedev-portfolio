@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FC } from "react";
 import clsx from "clsx";
@@ -6,6 +9,8 @@ import { NAV_ITEMS } from "@/constants/options";
 import { ThemeToggle } from "./theme-toggle";
 
 export const Header: FC = () => {
+  const currentPath = usePathname();
+
   return (
     <header
       className={clsx(
@@ -33,7 +38,10 @@ export const Header: FC = () => {
         >
           {NAV_ITEMS.map((item) => (
             <Link
-              className="hover:underline"
+              className={clsx(
+                "hover:underline",
+                currentPath.includes(item.toLowerCase()) && "underline",
+              )}
               href={item.toLowerCase()}
               key={item}
             >
