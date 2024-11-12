@@ -19,7 +19,7 @@ export const ThemeToggle: FC = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className={clsx("p-2 text-slate-900 rounded group", "dark:text-white")}
+      className={clsx("group rounded p-2 text-slate-900", "dark:text-white")}
     >
       {theme === "dark" ? (
         <MdOutlineLightMode className="group-hover:text-yellow-400" size={24} />

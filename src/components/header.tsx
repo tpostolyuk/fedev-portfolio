@@ -9,16 +9,16 @@ export const Header: FC = () => {
   return (
     <header
       className={clsx(
-        "flex items-center gap-8 border-b-[1px] bg-zinc-100 dark:bg-slate-900 border-b-slate-900 sticky top-0 left-0 right-0 h-[65px] z-10",
-        "dark:border-b-white"
+        "sticky left-0 right-0 top-0 z-10 flex h-[65px] items-center gap-8 border-b-[1px] border-b-slate-900 bg-zinc-100 dark:bg-slate-900",
+        "dark:border-b-white",
       )}
     >
       <Link href="/">
         <div
           className={clsx(
-            "p-8 flex items-center justify-center max-w-fit h-8 font-bold md:text-xl text-slate-900 border-r-[1px] border-r-slate-900",
-            "dark:bg-slate-900 dark:text-white dark:border-r-white",
-            "hover:underline cursor-pointer"
+            "flex h-8 max-w-fit items-center justify-center border-r-[1px] border-r-slate-900 p-8 font-bold text-slate-900 md:text-xl",
+            "dark:border-r-white dark:bg-slate-900 dark:text-white",
+            "cursor-pointer hover:underline",
           )}
         >
           FE DEV
@@ -28,7 +28,7 @@ export const Header: FC = () => {
         <ul
           className={clsx(
             "hidden items-center gap-8 md:flex",
-            "dark:text-white"
+            "dark:text-white",
           )}
         >
           {NAV_ITEMS.map((item) => (
@@ -42,8 +42,8 @@ export const Header: FC = () => {
           ))}
         </ul>
       </nav>
-      <div className="flex items-center gap-2 ml-auto mr-8">
-        <div className="md:flex hidden">
+      <div className="ml-auto mr-8 flex items-center gap-2">
+        <div className="hidden md:flex">
           <ThemeToggle />
         </div>
       </div>

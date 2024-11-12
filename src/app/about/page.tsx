@@ -14,11 +14,11 @@ const bebasNeue = Bebas_Neue({
 
 export default function About() {
   return (
-    <main className="bg-zinc-100 flex flex-col overflow-y-auto h-full">
+    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
       <section
         className={clsx(
           "border-b-[1px] border-b-slate-900 py-8",
-          "dark:bg-slate-900 dark:border-b-white"
+          "dark:border-b-white dark:bg-slate-900",
         )}
       >
         <motion.h1
@@ -27,7 +27,7 @@ export default function About() {
           className={clsx(
             bebasNeue.className,
             "text-center text-6xl",
-            "dark:text-white"
+            "dark:text-white",
           )}
         >
           ABOUT ME
@@ -35,13 +35,13 @@ export default function About() {
       </section>
       <section
         className={clsx(
-          "flex flex-col justify-center items-center py-14",
-          "dark:bg-slate-900 dark:text-white"
+          "flex flex-col items-center justify-center py-14",
+          "dark:bg-slate-900 dark:text-white",
         )}
       >
-        <div className="flex items-center gap-8 max-w-2xl">
+        <div className="flex max-w-2xl items-center gap-8">
           <motion.div
-            className="min-w-[200px] min-h-[200px]"
+            className="min-h-[200px] min-w-[200px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
@@ -63,9 +63,9 @@ export default function About() {
             experience."
           />
         </div>
-        <div className="flex flex-col gap-4 mt-6 max-w-2xl">
+        <div className="mt-6 flex max-w-2xl flex-col gap-4">
           <h2 className="text-2xl font-semibold">What I offer:</h2>
-          <ul className="flex flex-col gap-2 list-disc">
+          <ul className="flex list-disc flex-col gap-2">
             <li className="ml-8">
               Expertise in transforming Figma/PSD designs into{" "}
               <strong>pixel-perfect</strong>, functional websites.
@@ -84,7 +84,7 @@ export default function About() {
             </li>
           </ul>
           <h2 className="text-2xl font-semibold">Tech Stack:</h2>
-          <ul className="flex flex-col gap-2 list-disc">
+          <ul className="flex list-disc flex-col gap-2">
             <li className="ml-8">
               <b>Frontend:</b> JavaScript, TypeScript, React, Redux, React
               Query, Next.js, CSS (Sass), HTML, Bootstrap, Tailwind CSS,

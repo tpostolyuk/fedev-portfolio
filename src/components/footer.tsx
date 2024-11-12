@@ -11,11 +11,11 @@ export const Footer: FC = () => {
   return (
     <footer
       className={clsx(
-        "flex items-center gap-4 justify-between border-t-slate-900 border-t-[1px] py-4 px-8 bg-zinc-100 md:h-[65px]",
-        "dark:border-t-white dark:bg-slate-900 dark:text-white"
+        "flex items-center justify-between gap-4 border-t-[1px] border-t-slate-900 bg-zinc-100 px-8 py-4 md:h-[65px]",
+        "dark:border-t-white dark:bg-slate-900 dark:text-white",
       )}
     >
-      <ul className="grid md:grid-cols-4 grid-cols-2 md:mx-auto items-center text-xs font-semibold gap-8">
+      <ul className="grid grid-cols-2 items-center gap-8 text-xs font-semibold md:mx-auto md:grid-cols-4">
         {NAV_ITEMS.map((item) => (
           <Link
             className="hover:underline"
@@ -29,7 +29,7 @@ export const Footer: FC = () => {
           <a href="mailto:tpstlk.work@gmail.com">EMAIL</a>
         </li>
       </ul>
-      <ul className="grid md:grid-cols-4 grid-cols-2 items-center gap-4">
+      <ul className="grid grid-cols-2 items-center gap-4 md:grid-cols-4">
         <li className="hover:rotate-6">
           <a target="_blank" href="https://github.com/tpostolyuk">
             <FaGithub size={24} />

@@ -13,11 +13,11 @@ const bebasNeue = Bebas_Neue({
 
 export default function Contact() {
   return (
-    <main className="bg-zinc-100 flex flex-col overflow-y-auto h-full">
+    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
       <section
         className={clsx(
           "border-b-[1px] border-b-slate-900 py-8",
-          "dark:bg-slate-900 dark:border-b-white"
+          "dark:border-b-white dark:bg-slate-900",
         )}
       >
         <motion.h1
@@ -26,7 +26,7 @@ export default function Contact() {
           className={clsx(
             bebasNeue.className,
             "text-center text-6xl",
-            "dark:text-white"
+            "dark:text-white",
           )}
         >
           CONTACT
@@ -34,18 +34,18 @@ export default function Contact() {
       </section>
       <section
         className={clsx(
-          "flex flex-col justify-center items-center py-14 h-full flex-grow",
-          "dark:bg-slate-900 dark:text-white dark:border-b-white"
+          "flex h-full flex-grow flex-col items-center justify-center py-14",
+          "dark:border-b-white dark:bg-slate-900 dark:text-white",
         )}
       >
-        <div className="flex flex-col justify-start items-start gap-8 max-w-2xl w-full">
+        <div className="flex w-full max-w-2xl flex-col items-start justify-start gap-8">
           <div
             className={clsx(
               "border-b-2 border-b-slate-900",
-              "dark:border-b-white"
+              "dark:border-b-white",
             )}
           >
-            <h2 className="text-4xl text-left font-medium">
+            <h2 className="text-left text-4xl font-medium">
               Get in touch with me via links on social media or send me an{" "}
               <a
                 href="mailto:tpstlk.work@gmail.com"
@@ -59,7 +59,7 @@ export default function Contact() {
           </div>
           <ul className="grid grid-cols-3 items-start gap-8">
             {SOCIAL_LINKS.map(({ label, url, Icon }) => (
-              <li key={label} className="hover:underline group">
+              <li key={label} className="group hover:underline">
                 <a
                   className="flex items-center gap-2"
                   href={url}
@@ -68,8 +68,8 @@ export default function Contact() {
                   {
                     <Icon
                       className={clsx(
-                        "group-hover:text-slate-800 group-hover:rotate-6",
-                        "dark:group-hover:text-zinc-100"
+                        "group-hover:rotate-6 group-hover:text-slate-800",
+                        "dark:group-hover:text-zinc-100",
                       )}
                       size={32}
                     />
