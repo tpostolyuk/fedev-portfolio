@@ -21,7 +21,7 @@ import {
   SiRedux,
 } from "react-icons/si";
 
-export const NAV_ITEMS = ["ABOUT", "SKILLS", "CONTACT"];
+export const NAV_ITEMS = ["ABOUT", "SKILLS", "CONTACT", "BLOG"];
 
 export const SOCIAL_LINKS = [
   { label: "Github", Icon: FaGithub, url: "https://github.com/tpostolyuk" },
