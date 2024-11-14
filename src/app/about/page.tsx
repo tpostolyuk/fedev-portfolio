@@ -13,11 +13,16 @@ export default function About() {
       <Title title="ABOUT ME" />
       <section
         className={clsx(
-          "flex flex-col items-center justify-center py-8",
+          "flex flex-col items-center justify-center px-4 py-8",
           "dark:bg-slate-900 dark:text-white",
         )}
       >
-        <div className="flex max-w-2xl items-center gap-8">
+        <div
+          className={clsx(
+            "flex max-w-2xl flex-col items-center gap-8",
+            "md:flex-row",
+          )}
+        >
           <motion.div
             className="min-h-[200px] min-w-[200px]"
             initial={{ opacity: 0 }}
@@ -42,7 +47,9 @@ export default function About() {
           />
         </div>
         <div className="mt-6 flex max-w-2xl flex-col gap-4">
-          <h2 className="text-2xl font-semibold">What I offer:</h2>
+          <h2 className={clsx("text-xl font-semibold", "md:text-2xl")}>
+            What I offer:
+          </h2>
           <ul className="flex list-disc flex-col gap-2">
             <li className="ml-8">
               Expertise in transforming Figma/PSD designs into{" "}
@@ -61,7 +68,9 @@ export default function About() {
               thorough industry research to seamless end-user experiences.
             </li>
           </ul>
-          <h2 className="text-2xl font-semibold">Tech Stack:</h2>
+          <h2 className={clsx("text-xl font-semibold", "md:text-2xl")}>
+            Tech Stack:
+          </h2>
           <ul className="flex list-disc flex-col gap-2">
             <li className="ml-8">
               <b>Frontend:</b> JavaScript, TypeScript, React, Redux, React
@@ -78,7 +87,7 @@ export default function About() {
               <b>DesignTools:</b> Figma.
             </li>
           </ul>
-          Whether you’re looking to create a custom dashboard, deploy a
+          Whether you&apos;re looking to create a custom dashboard, deploy a
           responsive website, or enhance an existing platform, I can help you
           bring your vision to life. Let&apos;s work together to turn your ideas
           into impactful solutions!
