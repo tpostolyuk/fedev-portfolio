@@ -50,7 +50,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             <ThemeToggle />
           </div>
         </div>
-        <nav className="flex h-full items-center justify-center">
+        <nav className="flex h-[80%] items-center justify-center">
           <ul
             className={clsx(
               "flex h-full flex-col items-center justify-center gap-16",
