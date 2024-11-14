@@ -7,7 +7,7 @@ import { Title } from "@/components/title";
 
 export default function Contact() {
   return (
-    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
+    <main className="flex h-full flex-col">
       <Title title="CONTACT" />
       <section
         className={clsx(
@@ -38,8 +38,8 @@ export default function Contact() {
           </div>
           <ul
             className={clsx(
-              "grid grid-cols-2 items-start gap-4",
-              "md:grid-cols-3 md:gap-8",
+              "flex flex-wrap items-start gap-4",
+              "md:grid md:grid-cols-3 md:gap-8",
             )}
           >
             {SOCIAL_LINKS.map(({ label, url, Icon }) => (
@@ -52,10 +52,10 @@ export default function Contact() {
                   {
                     <Icon
                       className={clsx(
-                        "group-hover:rotate-6 group-hover:text-slate-800",
+                        "text-2xl group-hover:rotate-6 group-hover:text-slate-800",
                         "dark:group-hover:text-zinc-100",
+                        "md:text-[32px]",
                       )}
-                      size={32}
                     />
                   }
                   <span>{label}</span>

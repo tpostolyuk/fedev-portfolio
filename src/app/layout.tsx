@@ -1,10 +1,11 @@
 import { Host_Grotesk } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
+import clsx from "clsx";
 
 import { Header } from "@/components/header";
-import "./globals.css";
 import { Footer } from "@/components/footer";
+import "./globals.css";
 
 const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
@@ -30,12 +31,16 @@ export default function RootLayout({
       lang="en"
     >
       <body
-        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
-        className={hostGrotesk.className}
+        className={clsx(
+          hostGrotesk.className,
+          "flex h-screen flex-col overflow-hidden",
+        )}
       >
         <ThemeProvider defaultTheme="system" attribute="class">
           <Header />
-          {children}
+          <div className="h-full max-h-[calc(100vh-130px)] overflow-y-auto">
+            {children}
+          </div>
           <Footer />
         </ThemeProvider>
       </body>

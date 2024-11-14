@@ -11,7 +11,7 @@ const bebasNeue = Bebas_Neue({
 });
 export default function Home() {
   return (
-    <div className="flex h-full flex-col overflow-y-auto bg-zinc-100">
+    <div className="flex h-full flex-col">
       <Title title="PORTFOLIO" />
       <section
         className={clsx(
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="mb-auto flex flex-col items-center justify-start gap-4">
           <div className="rounded-full border-2 border-slate-500">
             <Image
-              className="rounded-full"
+              className={clsx("size-28 rounded-full", "md:size-[150px]")}
               src="/profile.png"
               alt="profile"
               height={150}
@@ -45,8 +45,9 @@ export default function Home() {
           <Link
             className={clsx(
               bebasNeue.className,
-              "mt-12 animate-bounce border-2 border-slate-800 p-4 text-3xl font-normal text-slate-800",
+              "mt-12 animate-bounce border-2 border-slate-800 p-2 text-2xl font-normal text-slate-800",
               "dark:border-white dark:text-white",
+              "md:p-4",
             )}
             href="/contact"
           >

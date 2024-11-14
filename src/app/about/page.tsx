@@ -9,7 +9,7 @@ import { Title } from "@/components/title";
 
 export default function About() {
   return (
-    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
+    <main className="flex h-full flex-col">
       <Title title="ABOUT ME" />
       <section
         className={clsx(

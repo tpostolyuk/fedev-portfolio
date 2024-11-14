@@ -5,7 +5,7 @@ import { Title } from "@/components/title";
 
 export default function Contact() {
   return (
-    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
+    <main className="flex h-full flex-col">
       <Title title="SKILLS" />
       <section
         className={clsx(

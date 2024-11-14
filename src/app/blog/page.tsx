@@ -6,7 +6,7 @@ import { Title } from "@/components/title";
 
 export default function Blog() {
   return (
-    <main className="flex h-full flex-col overflow-y-auto bg-zinc-100">
+    <main className="flex h-full flex-col">
       <Title title="BLOG (COMING SOON)" />
       <section
         className={clsx(
