@@ -1,15 +1,21 @@
 "use client";
 
+import { MdOutlineMenu } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import { FC, useState } from "react";
 import Link from "next/link";
-import { FC } from "react";
 import clsx from "clsx";
 
 import { NAV_ITEMS } from "@/constants/options";
 import { ThemeToggle } from "./theme-toggle";
+import { Drawer } from "./drawer";
 
 export const Header: FC = () => {
+  const [isDrawerVisible, setDrawerVisibility] = useState(false);
   const currentPath = usePathname();
+
+  const onCloseDrawer = () => setDrawerVisibility(false);
+  const onOpenDrawer = () => setDrawerVisibility(true);
 
   return (
     <header
@@ -52,6 +58,10 @@ export const Header: FC = () => {
         </ul>
       </nav>
       <div className="ml-auto mr-8 flex items-center gap-2">
+        <button onClick={onOpenDrawer} className="flex md:hidden">
+          <MdOutlineMenu size={24} />
+        </button>
+        {isDrawerVisible && <Drawer onClose={onCloseDrawer} />}
         <div className="hidden md:flex">
           <ThemeToggle />
         </div>

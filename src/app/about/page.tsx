@@ -38,7 +38,7 @@ export default function About() {
             />
           </motion.div>
           <AnimatedText
-            text="Hi there! I'm a skilled Front-End Developer who focuses on
+            text="Greetings! I'm a skilled Front-End Developer who focuses on
             crafting dynamic, scalable web applications that drive business
             growth. With extensive experience in React.js, TypeScript, Next.js,
             and other modern frameworks, I specialize in building responsive,
