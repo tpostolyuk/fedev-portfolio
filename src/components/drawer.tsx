@@ -18,19 +18,19 @@ export const Drawer: FC<Props> = ({ onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/10 backdrop-blur-sm backdrop-brightness-75"
+      className="fixed inset-0 bg-black/5 backdrop-blur-sm backdrop-brightness-75"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
         className={clsx(
           "fixed bottom-0 right-0 top-0 z-10 w-[70%] bg-zinc-100 p-16",
-          "dark:bg-slate-900",
+          "dark:bg-slate-800",
         )}
       >
         <div className="flex flex-col items-center gap-8">
           <button className="ml-auto" onClick={onClose}>
-            <IoMdClose size={32} />
+            <IoMdClose className="dark:text-white" size={32} />
           </button>
 
           <Link href="/">

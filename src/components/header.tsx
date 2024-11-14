@@ -59,7 +59,7 @@ export const Header: FC = () => {
       </nav>
       <div className="ml-auto mr-8 flex items-center gap-2">
         <button onClick={onOpenDrawer} className="flex md:hidden">
-          <MdOutlineMenu size={24} />
+          <MdOutlineMenu className={clsx("dark:text-white")} size={24} />
         </button>
         {isDrawerVisible && <Drawer onClose={onCloseDrawer} />}
         <div className="hidden md:flex">
