@@ -30,7 +30,12 @@ export default function RootLayout({
       lang="en"
     >
       <body className={hostGrotesk.className}>
-        <ThemeProvider defaultTheme="system" attribute="class">
+        <ThemeProvider
+          defaultTheme="system"
+          enableColorScheme
+          attribute="class"
+          enableSystem
+        >
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-grow bg-zinc-100 dark:bg-slate-900">

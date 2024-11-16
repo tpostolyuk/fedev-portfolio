@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import clsx from "clsx";
 
 export const ThemeToggle: FC = () => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
 
@@ -18,10 +18,10 @@ export const ThemeToggle: FC = () => {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className={clsx("group rounded p-2 text-slate-900", "dark:text-white")}
     >
-      {theme === "dark" ? (
+      {resolvedTheme === "dark" ? (
         <MdOutlineLightMode className="group-hover:text-yellow-400" size={24} />
       ) : (
         <MdOutlineDarkMode className="group-hover:text-yellow-400" size={24} />
