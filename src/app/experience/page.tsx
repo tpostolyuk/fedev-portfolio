@@ -44,7 +44,7 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <MdDateRange />
-              <span>04/2023 - 06/2023</span>
+              <span className="text-[#003295]">04/2023 - 06/2023</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -60,7 +60,7 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <MdDateRange />
-              <span>04/2022 - 04/2023</span>
+              <span className="text-[#003295]">04/2022 - 04/2023</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -74,7 +74,7 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <MdDateRange />
-              <span>10/2021 - 04/2022</span>
+              <span className="text-[#003295]">10/2021 - 04/2022</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -95,7 +95,7 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <MdDateRange />
-              <span>08/2021 - 10/2021</span>
+              <span className="text-[#003295]">08/2021 - 10/2021</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -116,7 +116,7 @@ export default function Contact() {
             </p>
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <MdDateRange />
-              <span>06/2020 - 08/2021</span>
+              <span className="text-[#003295]">06/2020 - 08/2021</span>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function Contact() {
               </p>
               <div className="flex items-center gap-1 text-xs text-gray-500">
                 <MdDateRange />
-                <span>01/2018 - 01/2022</span>
+                <span className="text-[#003295]">01/2018 - 01/2022</span>
                 <div className="flex items-center">
                   <MdLocationOn />
                   <span>Ukraine</span>
@@ -165,7 +165,7 @@ export default function Contact() {
               </p>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MdDateRange />
-                <span>01/2023 - 01/2025</span>
+                <span className="text-[#003295]">01/2023 - 01/2025</span>
                 <div className="flex items-center">
                   <MdLocationOn />
                   <span>Ukraine</span>
