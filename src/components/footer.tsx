@@ -17,13 +17,11 @@ export const Footer: FC = () => {
     >
       <ul className="hidden grid-cols-2 items-center gap-8 text-xs font-semibold md:mx-auto md:grid md:grid-cols-6">
         {NAV_ITEMS.map((item) => (
-          <Link
-            className="hover:underline"
-            href={item.toLowerCase()}
-            key={item}
-          >
-            <li>{item}</li>
-          </Link>
+          <li key={item}>
+            <Link className="hover:underline" href={item.toLowerCase()}>
+              {item}
+            </Link>
+          </li>
         ))}
         <li className="hover:underline">
           <a href="mailto:tpstlk.work@gmail.com">EMAIL</a>
@@ -31,13 +29,18 @@ export const Footer: FC = () => {
       </ul>
       <ul className="mx-auto grid grid-cols-4 items-center gap-4">
         <li className="hover:rotate-6">
-          <a target="_blank" href="https://github.com/tpostolyuk">
+          <a
+            aria-label="Link to my GitHub profile"
+            href="https://github.com/tpostolyuk"
+            target="_blank"
+          >
             <FaGithub size={24} />
           </a>
         </li>
         <li className="hover:rotate-6">
           <a
             href="https://www.linkedin.com/in/taras-p-8199491a5/"
+            aria-label="Link to my LinkedIn profile"
             target="_blank"
           >
             <FaLinkedin size={24} />
@@ -46,13 +49,18 @@ export const Footer: FC = () => {
         <li className="hover:rotate-6">
           <a
             href="https://www.upwork.com/freelancers/~011e871456341347b4"
+            aria-label="Link to my Upwork profile"
             target="_blank"
           >
             <FaSquareUpwork size={24} />
           </a>
         </li>
         <li className="hover:rotate-6">
-          <a href="https://dev.to/tpostoliuk" target="_blank">
+          <a
+            aria-label="Link to my dev.to profile"
+            href="https://dev.to/tpostoliuk"
+            target="_blank"
+          >
             <BiLogoDevTo size={28} />
           </a>
         </li>

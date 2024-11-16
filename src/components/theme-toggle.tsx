@@ -18,6 +18,7 @@ export const ThemeToggle: FC = () => {
 
   return (
     <button
+      aria-label="theme toggle"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className={clsx("group rounded p-2 text-slate-900", "dark:text-white")}
     >

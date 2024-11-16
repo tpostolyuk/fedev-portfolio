@@ -44,16 +44,17 @@ export const Header: FC = () => {
           )}
         >
           {NAV_ITEMS.map((item) => (
-            <Link
-              className={clsx(
-                "hover:underline",
-                currentPath.includes(item.toLowerCase()) && "underline",
-              )}
-              href={item.toLowerCase()}
-              key={item}
-            >
-              <li>{item}</li>
-            </Link>
+            <li key={item}>
+              <Link
+                className={clsx(
+                  "hover:underline",
+                  currentPath.includes(item.toLowerCase()) && "underline",
+                )}
+                href={item.toLowerCase()}
+              >
+                {item}
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>

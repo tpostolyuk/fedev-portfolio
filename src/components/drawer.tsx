@@ -66,17 +66,18 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             )}
           >
             {NAV_ITEMS.map((item) => (
-              <Link
-                onClick={onClose}
-                className={clsx(
-                  "text-sm hover:underline",
-                  currentPath.includes(item.toLowerCase()) && "underline",
-                )}
-                href={item.toLowerCase()}
-                key={item}
-              >
-                <li>{item}</li>
-              </Link>
+              <li key={item}>
+                <Link
+                  onClick={onClose}
+                  className={clsx(
+                    "text-sm hover:underline",
+                    currentPath.includes(item.toLowerCase()) && "underline",
+                  )}
+                  href={item.toLowerCase()}
+                >
+                  {item}
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>
