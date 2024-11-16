@@ -1,6 +1,7 @@
 "use client;";
 
 import { usePathname } from "next/navigation";
+import { Open_Sans } from "next/font/google";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import { FC } from "react";
@@ -8,6 +9,10 @@ import clsx from "clsx";
 
 import { NAV_ITEMS } from "@/constants/options";
 import { ThemeToggle } from "./theme-toggle";
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+});
 
 interface Props {
   onClose: () => void;
@@ -18,13 +23,16 @@ export const Drawer: FC<Props> = ({ onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/5 backdrop-blur-sm backdrop-brightness-75"
+      className={clsx(
+        openSans.className,
+        "fixed inset-0 bg-black/5 backdrop-blur-sm backdrop-brightness-75",
+      )}
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
         className={clsx(
-          "fixed bottom-0 right-0 top-0 z-10 w-[70%] bg-zinc-100 p-16",
+          "fixed bottom-0 right-0 top-0 z-10 w-[70%] bg-zinc-100 p-6",
           "dark:bg-slate-800",
         )}
       >
@@ -50,7 +58,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             <ThemeToggle />
           </div>
         </div>
-        <nav className="flex h-[80%] items-center justify-center">
+        <nav className="flex h-[70%] items-center justify-center">
           <ul
             className={clsx(
               "flex h-full flex-col items-center justify-center gap-16",
@@ -60,7 +68,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             {NAV_ITEMS.map((item) => (
               <Link
                 className={clsx(
-                  "text-xl hover:underline",
+                  "text-lg hover:underline",
                   currentPath.includes(item.toLowerCase()) && "underline",
                 )}
                 href={item.toLowerCase()}

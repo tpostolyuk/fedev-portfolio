@@ -36,11 +36,14 @@ export default function RootLayout({
           "flex h-screen flex-col overflow-hidden",
         )}
       >
-        <ThemeProvider defaultTheme="system" attribute="class">
+        <ThemeProvider
+          defaultTheme="system"
+          enableColorScheme
+          attribute="class"
+          enableSystem
+        >
           <Header />
-          <div className="h-full max-h-[calc(100vh-130px)] overflow-y-auto">
-            {children}
-          </div>
+          <div className="h-full overflow-y-auto">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>
