@@ -1,7 +1,6 @@
 import { Host_Grotesk } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
-import clsx from "clsx";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -26,25 +25,22 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className="bg-zinc-100 dark:bg-slate-900"
+      className="min-h-screen bg-zinc-100 dark:bg-slate-900"
       suppressHydrationWarning
       lang="en"
     >
-      <body
-        className={clsx(
-          hostGrotesk.className,
-          "flex h-screen flex-col overflow-hidden",
-        )}
-      >
+      <body className={hostGrotesk.className}>
         <ThemeProvider
           defaultTheme="system"
           enableColorScheme
           attribute="class"
           enableSystem
         >
-          <Header />
-          {children}
-          <Footer />
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

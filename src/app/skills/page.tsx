@@ -5,7 +5,7 @@ import { Title } from "@/components/title";
 
 export default function Contact() {
   return (
-    <main className="flex h-full max-h-[calc(100vh-130px)] flex-col overflow-y-auto">
+    <>
       <Title title="SKILLS" />
       <section
         className={clsx(
@@ -56,6 +56,6 @@ export default function Contact() {
           </section>
         </div>
       </section>
-    </main>
+    </>
   );
 }

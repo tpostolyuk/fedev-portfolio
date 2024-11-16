@@ -44,7 +44,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
           <Link href="/">
             <h2
               className={clsx(
-                "text-3xl font-bold",
+                "text-lg font-bold",
                 currentPath === "/" && "underline",
                 "dark:text-white",
               )}
@@ -58,7 +58,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             <ThemeToggle />
           </div>
         </div>
-        <nav className="flex h-[70%] items-center justify-center">
+        <nav className="mt-8 flex items-center justify-center">
           <ul
             className={clsx(
               "flex h-full flex-col items-center justify-center gap-16",
@@ -68,7 +68,7 @@ export const Drawer: FC<Props> = ({ onClose }) => {
             {NAV_ITEMS.map((item) => (
               <Link
                 className={clsx(
-                  "text-lg hover:underline",
+                  "text-sm hover:underline",
                   currentPath.includes(item.toLowerCase()) && "underline",
                 )}
                 href={item.toLowerCase()}

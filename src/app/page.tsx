@@ -11,7 +11,7 @@ const bebasNeue = Bebas_Neue({
 });
 export default function Home() {
   return (
-    <div className="flex h-full flex-col">
+    <>
       <Title title="PORTFOLIO" />
       <section
         className={clsx(
@@ -55,6 +55,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }
