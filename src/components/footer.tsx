@@ -15,7 +15,7 @@ export const Footer: FC = () => {
         "dark:border-t-white dark:bg-slate-900 dark:text-white",
       )}
     >
-      <ul className="hidden grid-cols-2 items-center gap-8 text-xs font-semibold md:mx-auto md:grid md:grid-cols-5">
+      <ul className="hidden grid-cols-2 items-center gap-8 text-xs font-semibold md:mx-auto md:grid md:grid-cols-6">
         {NAV_ITEMS.map((item) => (
           <Link
             className="hover:underline"
