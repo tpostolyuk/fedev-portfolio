@@ -42,9 +42,9 @@ export default function Contact() {
               third-party APIs for fetching live market data, and performance
               optimization to handle large datasets efficiently.
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-xs text-[#003295]">
               <MdDateRange />
-              <span className="text-[#003295]">04/2023 - 06/2023</span>
+              <span>04/2023 - 06/2023</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -58,9 +58,9 @@ export default function Contact() {
               view of progress in which users can create fully automated
               deployment pipelines, all without manual action.
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-xs text-[#003295]">
               <MdDateRange />
-              <span className="text-[#003295]">04/2022 - 04/2023</span>
+              <span>04/2022 - 04/2023</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -72,9 +72,9 @@ export default function Contact() {
               spaces for it further using by booking spaces (restaurants,
               coworking places, parking lots).
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-xs text-[#003295]">
               <MdDateRange />
-              <span className="text-[#003295]">10/2021 - 04/2022</span>
+              <span>10/2021 - 04/2022</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -93,9 +93,9 @@ export default function Contact() {
               exchange and includes functionality for bug-fixing and performance
               enhancements to maintain smooth operation.
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-xs text-[#003295]">
               <MdDateRange />
-              <span className="text-[#003295]">08/2021 - 10/2021</span>
+              <span>08/2021 - 10/2021</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -114,9 +114,9 @@ export default function Contact() {
               for refreshing tokens, conducting code reviews, and continuous
               optimization to ensure robust performance and user efficiency.
             </p>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-xs text-[#003295]">
               <MdDateRange />
-              <span className="text-[#003295]">06/2020 - 08/2021</span>
+              <span>06/2020 - 08/2021</span>
             </div>
           </div>
         </div>
@@ -145,9 +145,9 @@ export default function Contact() {
               <p className="text-">
                 Ternopil Ivan Puluj National Technical University
               </p>
-              <div className="flex items-center gap-1 text-xs text-gray-500">
+              <div className="flex items-center gap-1 text-xs text-[#003295]">
                 <MdDateRange />
-                <span className="text-[#003295]">01/2018 - 01/2022</span>
+                <span>01/2018 - 01/2022</span>
                 <div className="flex items-center">
                   <MdLocationOn />
                   <span>Ukraine</span>
@@ -163,9 +163,9 @@ export default function Contact() {
               <p className="text-">
                 Ternopil Ivan Puluj National Technical University
               </p>
-              <div className="flex items-center gap-2 text-xs text-gray-500">
+              <div className="flex items-center gap-2 text-xs text-[#003295]">
                 <MdDateRange />
-                <span className="text-[#003295]">01/2023 - 01/2025</span>
+                <span>01/2023 - 01/2025</span>
                 <div className="flex items-center">
                   <MdLocationOn />
                   <span>Ukraine</span>
