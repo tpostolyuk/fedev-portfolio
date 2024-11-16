@@ -43,7 +43,7 @@ export default function RootLayout({
           enableSystem
         >
           <Header />
-          <div className="h-full overflow-y-auto">{children}</div>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>
