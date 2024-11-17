@@ -11,7 +11,7 @@ export const Footer: FC = () => {
   return (
     <footer
       className={clsx(
-        "sticky bottom-0 left-0 right-0 flex h-[65px] items-center justify-between gap-4 border-t-[1px] border-t-slate-900 bg-zinc-100 px-8 py-4",
+        "flex h-[65px] items-center justify-between gap-4 border-t-[1px] border-t-slate-900 bg-zinc-100 px-8 py-4",
         "dark:border-t-white dark:bg-slate-900 dark:text-white",
       )}
     >
