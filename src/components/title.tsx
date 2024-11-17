@@ -1,7 +1,4 @@
-"use client";
-
 import { Bebas_Neue } from "next/font/google";
-import { motion } from "framer-motion";
 import { FC } from "react";
 import clsx from "clsx";
 
@@ -22,9 +19,7 @@ export const Title: FC<Props> = ({ title }) => {
         "dark:border-b-white dark:bg-slate-900",
       )}
     >
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+      <h1
         className={clsx(
           bebasNeue.className,
           "text-center text-4xl",
@@ -33,7 +28,7 @@ export const Title: FC<Props> = ({ title }) => {
         )}
       >
         {title}
-      </motion.h1>
+      </h1>
     </section>
   );
 };
