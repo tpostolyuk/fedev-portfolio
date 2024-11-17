@@ -20,7 +20,7 @@ export const Header: FC = () => {
   return (
     <header
       className={clsx(
-        "sticky left-0 right-0 top-0 z-10 flex h-[65px] items-center gap-8 border-y-[1px] border-y-slate-900 bg-zinc-100 dark:bg-slate-900",
+        "sticky left-0 right-0 top-0 z-10 flex h-16 items-center gap-8 border-y-[1px] border-y-slate-900 bg-zinc-100 dark:bg-slate-900",
         "dark:border-y-white",
       )}
     >
