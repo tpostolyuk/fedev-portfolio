@@ -42,7 +42,7 @@ export default function Contact() {
               third-party APIs for fetching live market data, and performance
               optimization to handle large datasets efficiently.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
               <MdDateRange />
               <span>04/2023 - 06/2023</span>
             </div>
@@ -58,7 +58,7 @@ export default function Contact() {
               view of progress in which users can create fully automated
               deployment pipelines, all without manual action.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
               <MdDateRange />
               <span>04/2022 - 04/2023</span>
             </div>
@@ -72,7 +72,7 @@ export default function Contact() {
               spaces for it further using by booking spaces (restaurants,
               coworking places, parking lots).
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
               <MdDateRange />
               <span>10/2021 - 04/2022</span>
             </div>
@@ -93,7 +93,7 @@ export default function Contact() {
               exchange and includes functionality for bug-fixing and performance
               enhancements to maintain smooth operation.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
               <MdDateRange />
               <span>08/2021 - 10/2021</span>
             </div>
@@ -114,7 +114,7 @@ export default function Contact() {
               for refreshing tokens, conducting code reviews, and continuous
               optimization to ensure robust performance and user efficiency.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+            <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
               <MdDateRange />
               <span>06/2020 - 08/2021</span>
             </div>
@@ -145,7 +145,7 @@ export default function Contact() {
               <p className="text-">
                 Ternopil Ivan Puluj National Technical University
               </p>
-              <div className="flex items-center gap-1 text-xs text-[#003295] dark:text-white">
+              <div className="flex items-center gap-1 text-xs text-[#003295] dark:text-[#EBD3F8]">
                 <MdDateRange />
                 <span>01/2018 - 01/2022</span>
                 <div className="flex items-center">
@@ -163,7 +163,7 @@ export default function Contact() {
               <p className="text-">
                 Ternopil Ivan Puluj National Technical University
               </p>
-              <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-white">
+              <div className="flex items-center gap-2 text-xs text-[#003295] dark:text-[#EBD3F8]">
                 <MdDateRange />
                 <span>01/2023 - 01/2025</span>
                 <div className="flex items-center">
@@ -178,7 +178,7 @@ export default function Contact() {
       <section
         className={clsx(
           "flex h-full flex-grow flex-col items-center justify-center px-4 py-8",
-          "dark:border-b-white dark:bg-slate-900 dark:text-white",
+          "dark:border-b-white dark:bg-slate-900 dark:text-[#EBD3F8]",
         )}
       >
         <div className="flex w-full max-w-2xl flex-col items-start justify-start gap-4">
